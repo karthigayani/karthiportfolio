@@ -27,7 +27,8 @@ const Contact = () => {
     setButtonText('Sending...');
 
     try {
-      let response = await fetch('http://localhost:4000/contact', {
+      // let response = await fetch('http://localhost:4000/contact', {
+      let response = await fetch('https://portfoliobackend-eta.vercel.app', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
