@@ -1,0 +1,44 @@
+.footer {
+    background-color: #1b1e21;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons {
+    margin-right: 20px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0;
+  }
+  
+
+  .fa-github::before {
+    content: '\f09b';
+  }
+  
+  .fa-linkedin::before {
+    content: '\f08c';
+  }
+  h3{
+    color: #B8B8B8;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  

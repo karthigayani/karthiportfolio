@@ -1,0 +1,121 @@
+/* Projects.css */
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 320px; /* Adjust as needed */
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #222A35;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column; /* Display the card content above the image on smaller screens */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-media img {
+  width: 100%;
+  height: auto; /* Adjust to maintain the aspect ratio */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+  background-color: #222A35;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: aliceblue;
+  margin: 0;
+}
+
+.card-content p {
+  margin-top: 11px;
+  color: #B8B8B8;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #222A35;
+}
+
+.github-icon {
+  padding: 10px;
+}
+
+.card-icons a {
+  color: grey;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 5px; /* Adjust the gap as needed */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tech-box {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: black;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .card-content h2 {
+    font-size: 1rem;
+  }
+  .card-content p {
+    font-size: 0.9rem;
+  }
+}

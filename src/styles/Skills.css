@@ -1,0 +1,100 @@
+/* Skills.css */
+:root {
+    --primary1: #5a4a75; /* Use the theme primary1 color */
+    --background1: #222A35; /* Use the theme background1 color */
+    --text: #C8CFD8; /* Use the theme text color */
+    --text2: #626970; /* Use the theme text2 color */
+    --text1: #F2F5F7; /* Use the theme text1 color */
+}
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: center;
+}
+.title {
+    font-size: 65px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+.skill {
+    width: 100%;
+    max-width: 500px;
+    background: var(--background1); 
+    border: 0.1px solid aliceblue; 
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border-radius: 16px;
+    padding: 18px 36px;
+
+    @media (max-width: 768px) {
+        max-width: 400px;
+        padding: 10px 36px;
+    }
+
+    @media (max-width: 500px) {
+        max-width: 330px;
+        padding: 10px 36px;
+    }
+}
+
+.skill-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #854CE6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 20px;
+  }
+  
+.skill-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text1); 
+    border: 1px solid var(--text1); 
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+.skill-image {
+    width: 24px;
+    height: 24px;
+}

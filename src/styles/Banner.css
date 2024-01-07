@@ -1,0 +1,91 @@
+/* Your default styles */
+
+.banner {
+    margin-top: 0;
+    padding: 150px 0 100px 0;
+    background-position: top center;
+}
+
+.banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, rgba(105, 75, 173, 0.7) 0%, rgba(37, 175, 199, 0.7) 100%);
+    border-radius: 15px;
+    font-size: 18px; 
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.banner h1 {
+    font-size: 40px; 
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.banner p {
+    color: #B8B8B8;
+    font-size: 16px; 
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+.banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+}
+
+.banner button svg {
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.banner button:hover svg {
+    margin-left: 25px;
+}
+
+.banner img {
+    animation: rotatefade 4s ease-in-out infinite;
+}
+
+@keyframes rotatefade {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg) scale(0.8);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.banner .name {
+    font-weight: 700;
+    font-size: 20px; 
+    margin: auto;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.8px;
+}
+
+
+@media screen and (max-width: 508px) {
+    .banner h1 {
+        font-size: 30px;
+    }
+}
